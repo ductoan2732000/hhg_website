@@ -1,10 +1,12 @@
 import type { NextPage } from "next";
-import styles from "@/styles/Home.module.css";
-import HomeContent from "@/components/home/index.tsx";
+import HomeContent from "@/components/home/index";
 
 const Home: NextPage = () => {
+  const a = () => {
+    console.log("🚀 ~ file: index.tsx ~ line 9 ~ a ~ a", a);
+  };
   return (
-    <div className={styles.container}>
+    <div>
       <HomeContent></HomeContent>
     </div>
   );
