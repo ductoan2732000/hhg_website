@@ -1,10 +1,11 @@
 import Footer from "@/components/common/footer";
-import styles from "@/styles/Home.module.css";
+import Header from "@/components/common/header";
+import styles from "@/styles/layout.module.scss";
 export default function Layout({ children }) {
   return (
     <>
-      <div>header</div>
-      <main className={styles.main}>{children}</main>
+      <Header />
+      <main className={`${styles.main}`}>{children}</main>
       <Footer />
     </>
   );
