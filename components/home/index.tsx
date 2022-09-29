@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import Image from "next/image";
 import styles from "../../styles/Home.module.css";
-import Footer from "../common/footer";
 
 const HomeContent = () => {
   return (
@@ -40,7 +39,6 @@ const HomeContent = () => {
           <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
         </a>
       </div>
-      <Footer></Footer>
     </div>
   );
 };
