@@ -1,6 +1,7 @@
 import { Carousel } from "react-bootstrap";
 import Image from "next/image";
 import ifff from "@/assets/image/image1.jpg";
+import NewsContent from "~/components/news";
 const HomeContent = () => {
   return (
     <div>
@@ -31,6 +32,7 @@ const HomeContent = () => {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
+      <NewsContent isHome={true} />;
     </div>
   );
 };
