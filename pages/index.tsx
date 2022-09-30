@@ -1,14 +1,12 @@
+/* eslint-disable @next/next/no-img-element */
 import type { NextPage } from "next";
-import HomeContent from "@/components/home/index";
+import Slider from "~/components/Home/Slider/Slider";
 
 const Home: NextPage = () => {
-  const a = () => {
-    console.log("🚀 ~ file: index.tsx ~ line 9 ~ a ~ a", a);
-  };
   return (
-    <div>
-      <HomeContent></HomeContent>
-    </div>
+    <>
+      <Slider />
+    </>
   );
 };
 
