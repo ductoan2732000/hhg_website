@@ -12,16 +12,23 @@
 .footer {
   border-top: 1px solid #eaeaea;
   min-height: 300px;
+  background-color: #baa62f;
   .footerLogo {
   }
   .footerInfo {
-    color: #baa62f;
+    color: #190301;
     font-size: inherit;
-    .footerInfoContent {
-      padding-bottom: 1em;
-      padding-top: 0.5rem;
-    }
   }
   .footerContact {
+    .footerContactIcon {
+      color: #190301;
+    }
+    .footerContactImage {
+      cursor: pointer;
+    }
+    .footerContactIcon:hover {
+      color: white;
+      cursor: pointer;
+    }
   }
 }
