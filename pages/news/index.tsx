@@ -1,8 +1,6 @@
 import NewsItem from "~/components/news/newsItem/newsItem";
 import new1 from "@/assets/image/new1.png";
 import new2 from "@/assets/image/news2.jpg";
-import { Button } from "react-bootstrap";
-import styles from "./news.module.scss";
 import { useRouter } from "next/router";
 import { StaticImageData } from "next/image";
 
@@ -12,9 +10,7 @@ export interface PostItem {
   thumbnail: StaticImageData;
 }
 
-const News: React.FC<{
-  isHome: boolean;
-}> = (props) => {
+const News = () => {
   const router = useRouter();
   const listPost: PostItem[] = [
     {
@@ -72,17 +68,6 @@ const News: React.FC<{
         TIN TỨC - SỰ KIỆN
       </div>
       <div className={`row p-2 p-md-5`}>{listPostComponent}</div>
-      {props.isHome ? (
-        <div className={`row d-flex justify-content-center pb-5`}>
-          <Button
-            onClick={toNewsPage}
-            variant={`secondary`}
-            className={`col-3 ${styles.listNewsMore}`}
-          >
-            Xem thêm
-          </Button>
-        </div>
-      ) : null}
     </div>
   );
 };
