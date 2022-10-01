@@ -2,7 +2,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import styles from './Header.module.scss';
+import styles from './header.module.scss';
 import logo from "@/assets/image/logo.png";
 import Image from 'next/image';
 

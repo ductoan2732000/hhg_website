@@ -1,11 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
-import type { NextPage } from "next";
-import Slider from "~/components/Home/Slider/Slider";
+import Slider from "~/components/home/slider/slider";
+import NewsHomePage from "~/components/news/newsHomePage/newsHomePage";
 
-const Home: NextPage = () => {
+const Home = () => {
   return (
     <>
       <Slider />
+      <NewsHomePage />
     </>
   );
 };
