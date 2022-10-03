@@ -10,6 +10,7 @@ export interface PostItem {
   thumbnail: StaticImageData;
 }
 
+
 const News = () => {
   const router = useRouter();
   const listPost: PostItem[] = [
